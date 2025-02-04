@@ -70,6 +70,10 @@ footer {
     text-align: center;
 }
 
+footer p {
+    font-size: 15px;
+}
+
 #copyright {
     color: #353535;;
 }
@@ -88,8 +92,9 @@ footer {
 }
 
 .social-media img {
-    width: 50px; /* Adjust icon size as needed */
-    height: 50px;
+    width: 40px; /* Adjust icon size as needed */
+    height: 40px;
+    margin: 5px;
     /*filter: brightness(0) invert(1); /* Make icons white */
 }
 
