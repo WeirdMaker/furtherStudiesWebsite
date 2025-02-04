@@ -67,10 +67,30 @@ body {
 footer {
     background-color: #ffffff;
     padding: 20px 20px;
+    text-align: center;
 }
 
 #copyright {
     color: #353535;;
+}
+
+.social-media {
+    margin: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+.social-media img {
+    width: 50px; /* Adjust icon size as needed */
+    height: 50px;
+    /*filter: brightness(0) invert(1); /* Make icons white */
 }
 
 /* Responsive Design */
