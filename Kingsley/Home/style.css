@@ -61,6 +61,9 @@ body {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .dropdown-menu li {
@@ -80,6 +83,8 @@ body {
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Search Bar Styling
@@ -244,6 +249,18 @@ footer p {
     height: 40px;
     margin: 5px;
     /*filter: brightness(0) invert(1); /* Make icons white */
+}
+
+.hidden-section {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(50px); /* Start slightly below */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animation when section is visible */
+.hidden-section.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to final position */
 }
 
 /* Responsive Design */
