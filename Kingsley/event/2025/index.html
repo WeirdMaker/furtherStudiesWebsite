@@ -4,12 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Further Studies - Events</title>
+    <title>Further Studies - Event</title>
     <meta name="description" content="A brief description of your page">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <!-- Logo on the left -->
+            <div class="logo">
+                <a href="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\home\index.html"><img src="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\img\navlogo.png" alt="Han Chiang High School"></a>
+            </div>
 
-    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-icon"> &#9776; </span> <!-- Unicode for ☰ -->
+            </button>
+
+            <!-- Navigation links on the right -->
+            <ul class="nav-links">
+                <li><a href="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\home\index.html">首页 | Home</a></li>
+                <li><a href="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\about\index.html">部门介绍 | About Our Department</a></li>
+                <li><a href="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\news\index.html">资讯中心 | News and Updates</a></li>
+                <li><a href="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\scholarship\index.html">奖学金 | Scholarship</a></li>
+
+                <!-- Event Dropdown -->
+                <li class="dropdown">
+                    <a class="active">活动 | Event</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\event\2025\index.html">2025</a></li>
+                    </ul>
+                </li>
+
+                <!-- Application Guide Dropdown -->
+                <li class="dropdown">
+                    <a>申请指南 | Application Guide</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\application\faqs\index.html">常见问题 | FAQs</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Search bar on the right -->
+            <div class="search-bar">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search..." name="query">
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>GET SOCIAL WITH US!</p>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://www.hchs.edu.my" target="_blank" aria-label="Visit HCHS">
+                    <img src="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\img\hchs-icon.png" alt="HCHS Icon">
+                </a>
+                <a href="https://www.facebook.com/hanchianghighschool" target="_blank" aria-label="Visit our Facebook">
+                    <img src="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\img\facebook-icon.png" alt="Facebook Icon">
+                </a>
+                <a href="https://www.instagram.com/hanchianghighschool/" target="_blank" aria-label="Visit our Instagram">
+                    <img src="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\img\social-instagram-new-circle-512.webp" alt="Instagram Icon">
+                </a>
+                <a href="" aria-label="Send us an email">
+                    <img src="C:\Users\testi\Desktop\HTML\furtherStudiesWebsite\Kingsley\img\gmail-icon-free-png.webp" alt="Email Icon">
+                </a>
+            </div>
+            <div id="copyright">
+                <p>Copyright &copy; 2024-2025 Han Chiang High School. All rights reserved. </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

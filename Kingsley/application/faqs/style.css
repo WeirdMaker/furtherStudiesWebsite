@@ -1,0 +1,192 @@
+/* Basic Reset */
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #353535; /* Hover color */
+}
+
+.nav-links li a.active {
+    color: #000000; /* Active link color */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    background-color: #e0dddd;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+    color: #353535; /* Hover color */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    color: #353535;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+#copyright {
+    color: #353535;;
+}
+
+.social-media {
+    margin: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+.social-media img {
+    width: 40px; /* Adjust icon size as needed */
+    height: 40px;
+    margin: 5px;
+    /*filter: brightness(0) invert(1); /* Make icons white */
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    /* Hide the navigation links and search bar */
+    .nav-links, .search-bar {
+        display: none;
+    }
+
+    /* Show the hamburger menu */
+    .hamburger {
+        padding: 5px 10px;
+        display: block;
+    }
+
+    /* Styles for when the menu is open */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px; /* Adjust based on navbar height */
+        left: 0;
+        width: 100%;
+        background-color: #d6d6d6;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(177, 118, 118, 0.1);
+    }
+
+    .search-bar.active {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* Adjust dropdown for mobile */
+    .dropdown-menu {
+        position: static; /* Reset position for mobile */
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-menu li {
+        margin: 0;
+    }
+
+    .dropdown-menu li a {
+        padding-left: 20px; /* Indent dropdown items */
+    }
+}
