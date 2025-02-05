@@ -185,6 +185,23 @@ body {
     font-size: 0.9rem;
     color: #636262;
 }
+.info-title {
+    width: 90%;
+    text-align: left;
+}
+
+.info-title h2 {
+    color: #3b4244;
+}
+
+.scholarship-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: rgb(209, 207, 207);
+}
 
 /* FOOTER */
 footer {
