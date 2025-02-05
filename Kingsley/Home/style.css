@@ -64,6 +64,15 @@ body {
     cursor: pointer;
 }
 
+.hamburger {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 footer {
     background-color: #ffffff;
     padding: 20px 20px;
@@ -107,6 +116,7 @@ footer p {
 
     /* Show the hamburger menu */
     .hamburger {
+        padding: 5px 8px;
         display: block;
     }
 
