@@ -7,7 +7,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kanit", serif;
 }
+
+/* NAVBAR */
 
 /* Navbar Styling */
 .navbar {
@@ -58,6 +61,9 @@ body {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .dropdown-menu li {
@@ -77,9 +83,11 @@ body {
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Search Bar Styling */
+/* Search Bar Styling
 .search-bar {
     display: flex;
     align-items: center;
@@ -97,7 +105,7 @@ body {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-}
+}*/
 
 .hamburger {
     display: none; /* Hide by default */
@@ -108,6 +116,107 @@ body {
     cursor: pointer;
 }
 
+.navbar-toggle_text {
+    font-size: 1rem;
+    margin-right: 5px;
+    vertical-align: 5%;
+}
+
+/* MAIN */
+
+/* Hero Section with Background Image */
+.hero-section {
+    background-image: url('background.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content h3 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+/* Information Boxes Section */
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: rgb(214, 214, 214);
+}
+
+.info-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h2 {
+    margin-bottom: 10px;
+}
+
+.info-box h2 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.info-box h2 a:hover {
+    color: #000000; /* Hover color for the link */
+    text-decoration: underline;
+}
+
+.info-box .description {
+    font-size: 1.1rem;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.info-box .information {
+    font-size: 0.9rem;
+    color: #636262;
+}
+.info-title {
+    width: 90%;
+    text-align: left;
+}
+
+.info-title h2 {
+    color: #3b4244;
+}
+
+.scholarship-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: rgb(209, 207, 207);
+}
+
+/* FOOTER */
 footer {
     background-color: #ffffff;
     padding: 20px 20px;
@@ -140,6 +249,18 @@ footer p {
     height: 40px;
     margin: 5px;
     /*filter: brightness(0) invert(1); /* Make icons white */
+}
+
+.hidden-section {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(50px); /* Start slightly below */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animation when section is visible */
+.hidden-section.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to final position */
 }
 
 /* Responsive Design */
