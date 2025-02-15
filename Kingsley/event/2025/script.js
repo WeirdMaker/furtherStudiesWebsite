@@ -3,6 +3,35 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const searchBar = document.querySelector('.search-bar');
 
+//search bar
+searchBar.addEventListener('keydown',function(event){
+    if(event.key=='Enter'){
+        const searchTerm = document.getElementById('query').value.trim().toLowerCase();
+        const resultsContainer = document.getElementById('search-results');
+    
+        if (searchTerm === '') {
+            resultsContainer.innerHTML = `<p>Please enter a search term.</p>`;
+            return;
+          }
+        
+        fetch('../../data.json')
+        .then(response => response.json())
+        .then(data => {
+            const results = data.filter(page => page.content.toLowerCase().includes(searchTerm));
+    
+            if (results.length > 0) {
+            resultsContainer.innerHTML = results.map(page => `<p><a href="${page.url}">${page.title}</a></p>`).join('');
+            } else {
+            resultsContainer.innerHTML = `<p>No results found for: <strong>${searchTerm}</strong></p>`;
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            resultsContainer.innerHTML = `<p>An error occurred while searching.</p>`;
+        });
+    }
+});
+
 // Toggle the mobile menu
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
