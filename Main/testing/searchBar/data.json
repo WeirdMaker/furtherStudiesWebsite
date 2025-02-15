@@ -1,0 +1,22 @@
+[
+    {
+      "title": "Home",
+      "url": "index.html",
+      "content": "We are a company dedicated to providing the best services in the industry."
+    },
+    {
+      "title": "About Us",
+      "url": "about.html",
+      "content": "We are a team of professionals passionate about delivering quality services."
+    },
+    {
+      "title": "Services",
+      "url": "services.html",
+      "content": "We offer web development, design, and consulting services."
+    },
+    {
+      "title": "Contact Us",
+      "url": "contact.html",
+      "content": "Reach out to us at contact@example.com for inquiries."
+    }
+]
