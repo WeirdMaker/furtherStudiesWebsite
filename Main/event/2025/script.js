@@ -6,8 +6,8 @@ const searchBar = document.querySelector('.search-bar');
 //search bar
 searchBar.addEventListener('keydown',function(event){
     if(event.key=='Enter'){
-        const searchTerm = document.getElementById('query').value.trim().toLowerCase();
-        const resultsContainer = document.getElementById('search-results');
+        const searchTerm = document.querySelector('.query').value.trim().toLowerCase();
+        const resultsContainer = document.querySelector('.search-results');
     
         if (searchTerm === '') {
             resultsContainer.innerHTML = `<p>Please enter a search term.</p>`;
@@ -20,7 +20,7 @@ searchBar.addEventListener('keydown',function(event){
             const results = data.filter(page => page.content.toLowerCase().includes(searchTerm));
     
             if (results.length > 0) {
-            resultsContainer.innerHTML = results.map(page => `<p><a href="${page.url}">${page.title}</a></p>`).join('');
+            resultsContainer.innerHTML = results.map(page => `<p><a href="../../${page.url}">${page.title}</a></p>`).join(''); //IMPORTANT: this is where we show our html code to display redirecting link
             } else {
             resultsContainer.innerHTML = `<p>No results found for: <strong>${searchTerm}</strong></p>`;
             }

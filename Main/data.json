@@ -1,7 +1,22 @@
 [
-    {
-      "title": "Home",
-      "url": "../../Home/index.html",
-      "content": "100% Tuition Fee Waiver for selected Diploma courses"
-    }
+  {
+    "title": "About",
+    "url": "about/index.html",
+    "content": "about "
+  },
+  {
+    "title": "Application: faqs",
+    "url": "application/faqs/index.html",
+    "content": "further studies application guide"
+  },
+  {
+    "title": "Event: 2025",
+    "url": "event/2025/index.html",
+    "content": "further studies event home news and updates"
+  },
+  {
+    "title": "Home",
+    "url": "Home/index.html",
+    "content": "further studies department home menu updates education fair campus tour study abroad fair 2025 MASIV Outreach & Senior Talk IELETS Online Workshop meet the university of sydney in malaysia melbourne study tour 2025 uk education fair 2025 Explore Your Future at the Further Studies Education Fair 2025 scholarship GM Education Award 2024 Peninsula College Georgetown Unlock Your Future with the Exclusive Sunway University Special Scholarships for Han Chiang High School Students Diploma courses opportunity"
+  }
 ]
