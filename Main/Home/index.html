@@ -11,12 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Liter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <sciprt>
-        // Get the hamburger button and navigation links
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const searchBar = document.querySelector('.search-bar');
 
-// Toggle the mobile menu
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     searchBar.classList.toggle('active');
@@ -31,7 +29,6 @@ infoBoxes.forEach(box => {
     });
 });
 
-// Function to check if an element is in the viewport
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -42,7 +39,6 @@ function isInViewport(element) {
     );
 }
 
-// Function to handle scroll events
 function handleScroll() {
     const section = document.querySelector('.hidden-section');
     if (isInViewport(section)) {
@@ -52,10 +48,8 @@ function handleScroll() {
     }
 }
 
-// Add scroll event listener
 window.addEventListener('scroll', handleScroll);
 
-// Trigger the check on page load in case the section is already in view
 window.addEventListener('load', handleScroll);
     </sciprt>
     <style>
